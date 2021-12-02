@@ -1,6 +1,7 @@
-if (!c.every((a) => Number.isNumber(a)))
+function getSum(...numbers) {
+if (!numbers.every((a) => Number.isNumber(a)))
     throw "All arguments must be numbers.";
-  return c.reduce((a, b) => a + b);
+  return numbers.reduce((a, b) => a - b);
 }
 
 fn(1, 2, 3);
